@@ -1,0 +1,76 @@
+## **Step One: Simplifying Expressions**
+
+Simplify the following big O expressions as much as possible:
+
+1. O(n + 10) → **O(n)** (We drop the constant term)
+2. O(100 * n) → **O(n)** (We drop the constant factor)
+3. O(25) → **O(1)** (Constant time)
+4. O(n^2 + n^3) → **O(n^3)** (We take the highest order term)
+5. O(n + n + n + n) → **O(n)** (Combine like terms)
+6. O(1000 * log(n) + n) → **O(n)** (We drop the logarithmic term)
+7. O(1000 * n * log(n) + n) → **O(n * log(n))** (Highest order term)
+8. O(2^n + n^2) → **O(2^n)** (Exponential growth dominates)
+9. O(5 + 3 + 1) → **O(1)** (Constant time)
+10. O(n + n^(1/2) + n^2 + n * log(n)^10) → **O(n^2)** (Highest order term)
+
+Step Two: Calculating Time Complexity
+
+1. **logUpTo(n)**:
+   - Time Complexity: **O(n)** (Linear time complexity as the loop runs from 1 to n)
+
+2. **logAtLeast10(n)**:
+   - Time Complexity: **O(n)** (Linear time complexity as the loop runs up to the maximum of n and 10)
+
+3. **logAtMost10(n)**:
+   - Time Complexity: **O(1)** (Constant time complexity as the loop always runs up to 10 iterations)
+
+4. **onlyElementsAtEvenIndex(array)**:
+   - Time Complexity: **O(n)** (Linear time complexity as it iterates through the entire array)
+
+5. **subtotals(array)**:
+   - Time Complexity: **O(n^2)** (Quadratic time complexity as there are nested loops where the outer loop runs 'n' times and the inner loop also runs 'n' times)
+
+6. **vowelCount(str)**:
+   - Time Complexity: **O(n)** (Linear time complexity as it iterates through each character in the input string 'str')
+
+## **Part 3 - short answer**
+
+Answer the following questions
+
+1. True or false: n^2 + n is O(n^2).
+True. n^2 + n simplifies to O(n^2) because in big O notation, we drop lower-order terms and constants.
+
+2. True or false: n^2 * n is O(n^3).
+True. n^2 * n simplifies to O(n^3) because in big O notation, we consider the dominant term, which is n^3.
+
+3. True or false: n^2 + n is O(n).
+False. n^2 + n is O(n^2) because in big O notation, we consider the dominant term, which is n^2.
+
+4. What’s the time complexity of the .indexOf array method?
+The time complexity of the .indexOf array method is O(n).
+
+5. What’s the time complexity of the .includes array method?
+The time complexity of the .includes array method is O(n).
+
+6. What’s the time complexity of the .forEach array method?
+The time complexity of the .forEach array method is O(n).
+
+7. What’s the time complexity of the .sort array method?
+The time complexity of the .sort array method depends on the implementation, but the average time complexity is O(n log n).
+
+8. What’s the time complexity of the .unshift array method?
+The time complexity of the .unshift array method is O(n) because adding an element to the beginning of an array requires shifting all existing elements.
+
+9. What’s the time complexity of the .push array method?
+The time complexity of the .push array method is O(1) on average, though it may vary based on the array's size and implementation.
+
+10. What’s the time complexity of the .splice array method?
+The time complexity of the .splice array method is O(n + m), where n is the length of the array and m is the number of elements to remove or insert.
+
+11. What’s the time complexity of the .pop array method?
+The time complexity of the .pop array method is O(1).
+
+12. What’s the time complexity of the Object.keys() function?
+The time complexity of the Object.keys() function is O(n), where n is the number of properties in the object.
+
+13. O(n) 
